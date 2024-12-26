@@ -1,5 +1,3 @@
-
-
 # KAIM Weak 3 Challenges Task 1
 
 ## AlphaCare Insurance Solutions (ACIS) Marketing Analytics Repository
