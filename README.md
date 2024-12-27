@@ -32,28 +32,82 @@ This repository is divided into four key branches, each representing a distinct 
 
 ```bash
 
-├── .github/
-│   └── workflows
-│       └── unittests.yml
-├── .gitignore
-├── requirements.txt
-├── README.md
-├── src/
-│   ├── __init__.py
-│   ├── data_loader.py        # Module to load and preprocess data
-│   ├── eda.py                # Module to handle EDA tasks
-│   └── visualization.py      # Module for plotting and visualization
-├── notebooks/
-│   ├── __init__.py
-│   └── Kaim_week_3_task-1.ipynb  
-├── tests/
-│   ├── __init__.py
-│   ├── test_data_loader.py   # Unit tests for data_loader.py
-│   ├── test_eda.py           # Unit tests for eda.py
-│   └── test_visualization.py # Unit tests for visualization.py
-└── scripts/
-    ├── __init__.py
-    └── main.py            # Script to run EDA from command line
+|   .dvcignore
+|   .gitignore
+|   dvc.lock
+|   dvc.yaml
+|   files.txt
+|   folder-structure.txt
+|   README.md
+|   requirements
+|   requirements.txt
+|   
++---.dvc
+|   |   .gitignore
+|   |   config
+  
+|   +---.vscode
+|   |       settings
+|   |       
+|   +---notebooks
+|   |       eda_notebook.ipynb
+|   |       __init__.py
+|   |       
+|   +---scripts
+|   |       data_processing.py
+|   |       data_visualization.py
+|   |       load_data.py
+|   |       __init__.py
+|   |       
+|   +---src
+|   |       __init__.py
+|   |       
+|   \---tests
+|           __init__.py
+|           
++---Data
+|   |   .gitignore
+|   |   raw.dvc
+|   |   
+|   +---interim
+|   |       .gitignore
+|   |       MachineLearningRating_v3.txt
+|   |       
+|   +---processed
+|   |       cleaned_data.csv
+|   |       
+|   +---raw
+|   |       MachineLearningRating_v3.zip
+|   |       
+|   \---visualizations
+|           correlation_heatmap.png
+|           geographical_trends.png
+|           outliers_boxplot.png
+|           premium_by_cover.png
+|           
++---notebooks
+|       eda_notebook.ipynb
+|       __init__.py
+|       
++---scripts
+|   |   data_processing.py
+|   |   data_visualization.py
+|   |   load_data.py
+|   |   __init__.py
+|   |   
+|   \---__pycache__
+|           data_processing.cpython-312.pyc
+|           data_visualization.cpython-312.pyc
+|           load_data.cpython-312.pyc
+|           
++---src
+|       __init__.py
+|       
+\---tests
+        test_data_processing.py
+        __init__.py
+        
+
 
 ```
 
