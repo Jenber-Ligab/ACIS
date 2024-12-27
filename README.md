@@ -72,7 +72,7 @@ This repository is divided into four key branches, each representing a distinct 
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/tedoaba/KAIM-W3.git
+   git clone [https://github.com/tedoaba/KAIM-W3.git](https://github.com/Jenber-Ligab/ACIS)
    cd KAIM-W3
    git checkout task-1
    ```
