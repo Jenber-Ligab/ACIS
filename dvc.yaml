@@ -1,0 +1,20 @@
+stages:
+  load_data:
+    cmd: python scripts/load_data.py
+    deps:
+    - scripts/load_data.py
+    - Data/raw/MachineLearningRating_v3.zip
+    outs:
+    - Data/interim/MachineLearningRating_v3.txt
+
+  process_data:
+    cmd: python scripts/data_processing.py
+    deps:
+    - scripts/data_processing.py
+    - Data/interim/MachineLearningRating_v3.txt
+    outs:
+    - Data/processed/cleaned_data.csv
+    metrics:
+    - Data/processed/missing_data_summary.json:
+        cache: false
+
