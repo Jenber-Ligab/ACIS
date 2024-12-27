@@ -1,2 +1,14 @@
 .week3
-Data/raw
+Data/raw/
+Data/interim/
+Data/processed/
+Data/visualizations/
+!Data/.gitkeep
+__pycache__/
+*.py[cod]
+*$py.class
+.dvc/
+*.dvc
+.vscode/
+cleaned-repo/
+* text=auto
