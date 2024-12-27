@@ -1,4 +1,4 @@
-# KAIM Weak 3 Challenges Task 1
+# KAIM Weak 3 Challenges Task 2
 
 ## AlphaCare Insurance Solutions (ACIS) Marketing Analytics Repository
 
@@ -16,17 +16,15 @@ This repository is divided into four key branches, each representing a distinct 
 
 ## Branch Overview
 
-### 1. `task-1` - Exploratory Data Analysis (EDA)
+### 2. `task-2` - Data Version Control (DVC)
 
-**Objective**: Conduct thorough exploratory data analysis to understand the distribution and relationships within the data, detect outliers, and identify trends across different regions and customer groups.
+**Objective**: Implement version control for data management using DVC to ensure reproducibility and maintain tracking of data changes.
 
 **Key Tasks**:
-- **Data Summarization**: Descriptive statistics for numerical features such as `TotalPremium`, `TotalClaim`, etc.
-- **Data Structure**: Review column formats and check for missing values.
-- **Univariate & Bivariate Analysis**: Analyze variable distributions and relationships using visualizations such as histograms, bar charts, scatter plots, and correlation matrices.
-- **Geographic Trend Comparison**: Analyze trends by geography, such as premium types and vehicle makes across regions.
-- **Outlier Detection**: Use box plots to identify outliers in numerical data.
-- **Visualization**: Create three insightful visualizations to highlight key findings.
+- Install and configure DVC.
+- Configure local remote storage.
+- Add datasets to version control using DVC.
+- Commit changes to Git and push data to the local remote.
 
 ## Project Structure Overview
 
@@ -45,7 +43,7 @@ This repository is divided into four key branches, each representing a distinct 
 │   └── visualization.py      # Module for plotting and visualization
 ├── notebooks/
 │   ├── __init__.py
-│   └── Kaim_week_3_task-1.ipynb  
+│   └── Kaim_week_3_task-2.ipynb 
 ├── tests/
 │   ├── __init__.py
 │   ├── test_data_loader.py   # Unit tests for data_loader.py
@@ -74,11 +72,12 @@ This repository is divided into four key branches, each representing a distinct 
    ```bash
    git clone https://github.com/tedoaba/KAIM-W3.git
    cd KAIM-W3
-   git checkout task-1
+   git checkout task-2
    ```
 
 2. **Install Dependencies**
-3. **Run Notebooks**
+3. **Set up DVC (if working on task-2)**
+4. **Run Notebooks**
 
 ## Key Insights and Recommendations
 
