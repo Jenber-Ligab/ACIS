@@ -1,5 +1,4 @@
-# KAIM Weak 3 Challenges Task 1
-
+# KAIM Weak 3 Challenges Task 2
 ## AlphaCare Insurance Solutions (ACIS) Marketing Analytics Repository
 
 Welcome to the AlphaCare Insurance Solutions (ACIS) Marketing Analytics Repository! This repository contains the code, data, models, and analysis related to our project aimed at optimizing marketing strategies and identifying low-risk targets for potential premium reductions in the South African car insurance market.
@@ -16,44 +15,97 @@ This repository is divided into four key branches, each representing a distinct 
 
 ## Branch Overview
 
-### 1. `task-1` - Exploratory Data Analysis (EDA)
 
-**Objective**: Conduct thorough exploratory data analysis to understand the distribution and relationships within the data, detect outliers, and identify trends across different regions and customer groups.
+### 2. `task-2` - Data Version Control (DVC)
+
+**Objective**: Implement version control for data management using DVC to ensure reproducibility and maintain tracking of data changes.
 
 **Key Tasks**:
-- **Data Summarization**: Descriptive statistics for numerical features such as `TotalPremium`, `TotalClaim`, etc.
-- **Data Structure**: Review column formats and check for missing values.
-- **Univariate & Bivariate Analysis**: Analyze variable distributions and relationships using visualizations such as histograms, bar charts, scatter plots, and correlation matrices.
-- **Geographic Trend Comparison**: Analyze trends by geography, such as premium types and vehicle makes across regions.
-- **Outlier Detection**: Use box plots to identify outliers in numerical data.
-- **Visualization**: Create three insightful visualizations to highlight key findings.
+- Install and configure DVC.
+- Configure local remote storage.
+- Add datasets to version control using DVC.
+- Commit changes to Git and push data to the local remote.
 
 ## Project Structure Overview
 
 ```bash
 
-├── .github/
-│   └── workflows
-│       └── unittests.yml
-├── .gitignore
-├── requirements.txt
-├── README.md
-├── src/
-│   ├── __init__.py
-│   ├── data_loader.py        # Module to load and preprocess data
-│   ├── eda.py                # Module to handle EDA tasks
-│   └── visualization.py      # Module for plotting and visualization
-├── notebooks/
-│   ├── __init__.py
-│   └── Kaim_week_3_task-1.ipynb  
-├── tests/
-│   ├── __init__.py
-│   ├── test_data_loader.py   # Unit tests for data_loader.py
-│   ├── test_eda.py           # Unit tests for eda.py
-│   └── test_visualization.py # Unit tests for visualization.py
-└── scripts/
-    ├── __init__.py
-    └── main.py            # Script to run EDA from command line
+|   .dvcignore
+|   .gitignore
+|   dvc.lock
+|   dvc.yaml
+|   files.txt
+|   folder-structure.txt
+|   README.md
+|   requirements
+|   requirements.txt
+|   
++---.dvc
+|   |   .gitignore
+|   |   config
+  
+|   +---.vscode
+|   |       settings
+|   |       
+|   +---notebooks
+|   |       eda_notebook.ipynb
+|   |       __init__.py
+|   |       
+|   +---scripts
+|   |       data_processing.py
+|   |       data_visualization.py
+|   |       load_data.py
+|   |       __init__.py
+|   |       
+|   +---src
+|   |       __init__.py
+|   |       
+|   \---tests
+|           __init__.py
+|           
++---Data
+|   |   .gitignore
+|   |   raw.dvc
+|   |   
+|   +---interim
+|   |       .gitignore
+|   |       MachineLearningRating_v3.txt
+|   |       
+|   +---processed
+|   |       cleaned_data.csv
+|   |       
+|   +---raw
+|   |       MachineLearningRating_v3.zip
+|   |       
+|   \---visualizations
+|           correlation_heatmap.png
+|           geographical_trends.png
+|           outliers_boxplot.png
+|           premium_by_cover.png
+|           
++---notebooks
+|       eda_notebook.ipynb
+|       __init__.py
+|       
++---scripts
+|   |   data_processing.py
+|   |   data_visualization.py
+|   |   load_data.py
+|   |   __init__.py
+|   |   
+|   \---__pycache__
+|           data_processing.cpython-312.pyc
+|           data_visualization.cpython-312.pyc
+|           load_data.cpython-312.pyc
+|           
++---src
+|       __init__.py
+|       
+\---tests
+        test_data_processing.py
+        __init__.py
+        
+
 
 ```
 
@@ -72,13 +124,17 @@ This repository is divided into four key branches, each representing a distinct 
 1. **Clone the Repository**
 
    ```bash
-   git clone [https://github.com/tedoaba/KAIM-W3.git](https://github.com/Jenber-Ligab/ACIS)
+
+   git clone https://github.com/Jenber-Ligab/ACIS
    cd KAIM-W3
-   git checkout task-1
+   git checkout task-2
    ```
 
 2. **Install Dependencies**
-3. **Run Notebooks**
+3. **Set up DVC (if working on task-2)**
+4. **Run Notebooks**
+
+
 
 ## Key Insights and Recommendations
 
