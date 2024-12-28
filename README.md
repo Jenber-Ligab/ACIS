@@ -1,4 +1,4 @@
-# KAIM Week 3 Challenges Task 1
+# KAIM Week 3 Challenges Task 2
 
 ## AlphaCare Insurance Solutions (ACIS) Marketing Analytics Repository
 
@@ -128,7 +128,7 @@ This repository is divided into four key branches, each representing a distinct 
 
    git clone https://github.com/Jenber-Ligab/ACIS
    cd KAIM-W3
-   git checkout task-1
+   git checkout task-2
    ```
 
 2. **Install Dependencies**
