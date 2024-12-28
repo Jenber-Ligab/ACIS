@@ -1,4 +1,4 @@
-# KAIM Weak 3 Challenges Task 2
+# KAIM Week 3 Challenges Task 2
 ## AlphaCare Insurance Solutions (ACIS) Marketing Analytics Repository
 
 Welcome to the AlphaCare Insurance Solutions (ACIS) Marketing Analytics Repository! This repository contains the code, data, models, and analysis related to our project aimed at optimizing marketing strategies and identifying low-risk targets for potential premium reductions in the South African car insurance market.
