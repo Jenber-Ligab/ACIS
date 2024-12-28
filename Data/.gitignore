@@ -1,0 +1,17 @@
+# Data directories
+Data/raw/
+Data/interim/
+Data/processed/
+Data/visualizations/
+
+# DVC files
+.dvc/
+*.dvc
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# VS Code
+.vscode/
