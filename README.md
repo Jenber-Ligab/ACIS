@@ -1,4 +1,5 @@
-# KAIM Week 3 Challenges Task 2
+# KAIM Week 3 Challenges Task 1
+
 ## AlphaCare Insurance Solutions (ACIS) Marketing Analytics Repository
 
 Welcome to the AlphaCare Insurance Solutions (ACIS) Marketing Analytics Repository! This repository contains the code, data, models, and analysis related to our project aimed at optimizing marketing strategies and identifying low-risk targets for potential premium reductions in the South African car insurance market.
@@ -127,11 +128,11 @@ This repository is divided into four key branches, each representing a distinct 
 
    git clone https://github.com/Jenber-Ligab/ACIS
    cd KAIM-W3
-   git checkout task-2
+   git checkout task-1
    ```
 
 2. **Install Dependencies**
-3. **Set up DVC (if working on task-2)**
+3. **Set up DVC (if working on task-1)**
 4. **Run Notebooks**
 
 
