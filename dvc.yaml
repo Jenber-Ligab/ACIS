@@ -1,0 +1,38 @@
+stages:
+  load_data:
+    cmd: python scripts/load_data.py
+    deps:
+      - scripts/load_data.py
+      - Data/raw/MachineLearningRating_v3.zip
+    outs:
+      - Data/interim/MachineLearningRating_v3.txt
+
+  process_data:
+    cmd: python scripts/data_processing.py
+    deps:
+      - scripts/data_processing.py
+      - Data/interim/MachineLearningRating_v3.txt
+    outs:
+      - Data/processed/cleaned_data.csv
+    metrics:
+      - Data/processed/missing_data_summary.json:
+          cache: false
+
+  visualize:
+    cmd: python scripts/data_visualization.py
+    deps:
+      - scripts/data_visualization.py
+      - Data/processed/cleaned_data.csv
+    plots:
+      - Data/visualizations/outliers_boxplot.png:
+          cache: true
+          persist: true
+      - Data/visualizations/correlation_heatmap.png:
+          cache: true
+          persist: true
+      - Data/visualizations/premium_by_cover.png:
+          cache: true
+          persist: true
+      - Data/visualizations/geographical_trends.png:
+          cache: true
+          persist: true

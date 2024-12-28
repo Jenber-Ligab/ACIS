@@ -16,17 +16,16 @@ This repository is divided into four key branches, each representing a distinct 
 
 ## Branch Overview
 
-### 1. `task-1` - Exploratory Data Analysis (EDA)
 
-**Objective**: Conduct thorough exploratory data analysis to understand the distribution and relationships within the data, detect outliers, and identify trends across different regions and customer groups.
+### 2. `task-2` - Data Version Control (DVC)
+
+**Objective**: Implement version control for data management using DVC to ensure reproducibility and maintain tracking of data changes.
 
 **Key Tasks**:
-- **Data Summarization**: Descriptive statistics for numerical features such as `TotalPremium`, `TotalClaim`, etc.
-- **Data Structure**: Review column formats and check for missing values.
-- **Univariate & Bivariate Analysis**: Analyze variable distributions and relationships using visualizations such as histograms, bar charts, scatter plots, and correlation matrices.
-- **Geographic Trend Comparison**: Analyze trends by geography, such as premium types and vehicle makes across regions.
-- **Outlier Detection**: Use box plots to identify outliers in numerical data.
-- **Visualization**: Create three insightful visualizations to highlight key findings.
+- Install and configure DVC.
+- Configure local remote storage.
+- Add datasets to version control using DVC.
+- Commit changes to Git and push data to the local remote.
 
 ## Project Structure Overview
 
@@ -126,13 +125,17 @@ This repository is divided into four key branches, each representing a distinct 
 1. **Clone the Repository**
 
    ```bash
+
    git clone https://github.com/Jenber-Ligab/ACIS
    cd KAIM-W3
    git checkout task-1
    ```
 
 2. **Install Dependencies**
-3. **Run Notebooks**
+3. **Set up DVC (if working on task-1)**
+4. **Run Notebooks**
+
+
 
 ## Key Insights and Recommendations
 
