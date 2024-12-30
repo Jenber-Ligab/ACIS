@@ -1,5 +1,4 @@
 # KAIM Week 3 Challenges Task 4
-
 ## AlphaCare Insurance Solutions (ACIS) Marketing Analytics Repository
 
 Welcome to the AlphaCare Insurance Solutions (ACIS) Marketing Analytics Repository! This repository contains the code, data, models, and analysis related to our project aimed at optimizing marketing strategies and identifying low-risk targets for potential premium reductions in the South African car insurance market.
@@ -46,7 +45,6 @@ This repository is divided into four key branches, each representing a distinct 
   
 |   +---.vscode
 |   |       settings
-|   |            
 +---Data
 |   |   .gitignore
 |   |   raw.dvc
@@ -71,11 +69,13 @@ This repository is divided into four key branches, each representing a distinct 
 |       eda_notebook.ipynb
 |       hypothesis_testing_notebook.ipynb
 |       model_training.ipynb
+
 |       __init__.py
 |       
 +---scripts
 |   |   data_processing.py
 |   |   data_visualization.py
+|   |   hypothesis_testing.py
 |   |   load_data.py
 |   |   eda.py
 |   |   evaluation.py
@@ -105,7 +105,7 @@ This repository is divided into four key branches, each representing a distinct 
 ### Prerequisites
 
 - Python 3.8+
-- Libraries: `pandas`, `numpy`, `matplotlib`, `scikit-learn`, `xgboost`, `dvc`, `shap`, `lime`, `seaborn`, etc.
+- Libraries: `pandas`, `numpy`, `matplotlib`, `scikit-learn`, `xgboost`, `dvc`, `shap`, `lime`, `seaborn`,`scipy`, etc.
 - Jupyter Notebook for running the analysis.
 - DVC for data version control.
 
@@ -117,11 +117,17 @@ This repository is divided into four key branches, each representing a distinct 
 
    git clone https://github.com/Jenber-Ligab/ACIS
    cd KAIM-W3
+
    git checkout task-4
    ```
 
 2. **Install Dependencies**
 3. **Set up DVC (if working on task-2 & 3)**
+
+   ```
+
+2. **Install Dependencies**
+3. **Set up DVC (if working on task-2)**
 4. **Run Notebooks**
 
 
