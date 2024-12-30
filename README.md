@@ -1,4 +1,4 @@
-# KAIM Week 3 Challenges Task 2
+# KAIM Week 3 Challenges Task 4
 
 ## AlphaCare Insurance Solutions (ACIS) Marketing Analytics Repository
 
@@ -16,16 +16,15 @@ This repository is divided into four key branches, each representing a distinct 
 
 ## Branch Overview
 
+### 4. `task-4` - Statistical Modeling & Machine Learning
 
-### 2. `task-2` - Data Version Control (DVC)
-
-**Objective**: Implement version control for data management using DVC to ensure reproducibility and maintain tracking of data changes.
+**Objective**: Build predictive models to forecast total claims and optimize premium values using features such as car characteristics, owner details, and location.
 
 **Key Tasks**:
-- Install and configure DVC.
-- Configure local remote storage.
-- Add datasets to version control using DVC.
-- Commit changes to Git and push data to the local remote.
+- **Data Preparation**: Handle missing values, encode categorical variables, and split data into training and test sets.
+- **Modeling**: Implement models including Linear Regression, Random Forests, and Gradient Boosting Machines (GBMs).
+- **Evaluation**: Compare models using metrics such as accuracy, precision, recall, and F1-score.
+- **Feature Importance**: Analyze the most influential features using SHAP or LIME for interpretability.
 
 ## Project Structure Overview
 
@@ -40,30 +39,14 @@ This repository is divided into four key branches, each representing a distinct 
 |   README.md
 |   requirements
 |   requirements.txt
-|   
+|   Docker.txt
 +---.dvc
 |   |   .gitignore
 |   |   config
   
 |   +---.vscode
 |   |       settings
-|   |       
-|   +---notebooks
-|   |       eda_notebook.ipynb
-|   |       __init__.py
-|   |       
-|   +---scripts
-|   |       data_processing.py
-|   |       data_visualization.py
-|   |       load_data.py
-|   |       __init__.py
-|   |       
-|   +---src
-|   |       __init__.py
-|   |       
-|   \---tests
-|           __init__.py
-|           
+|   |            
 +---Data
 |   |   .gitignore
 |   |   raw.dvc
@@ -86,24 +69,30 @@ This repository is divided into four key branches, each representing a distinct 
 |           
 +---notebooks
 |       eda_notebook.ipynb
+|       hypothesis_testing_notebook.ipynb
+|       model_training.ipynb
 |       __init__.py
 |       
 +---scripts
 |   |   data_processing.py
 |   |   data_visualization.py
 |   |   load_data.py
+|   |   eda.py
+|   |   evaluation.py
+|   |   feature_importance.py
+|   |   hypothesis_testing.py
+|   |   modeling.py
+|   |   save_model.py
 |   |   __init__.py
-|   |   
-|   \---__pycache__
-|           data_processing.cpython-312.pyc
-|           data_visualization.cpython-312.pyc
-|           load_data.cpython-312.pyc
-|           
+
 +---src
 |       __init__.py
+|       main.py
 |       
 \---tests
         test_data_processing.py
+        test_hypothesis_testing.py
+        test_eda.py
         __init__.py
         
 
@@ -128,13 +117,12 @@ This repository is divided into four key branches, each representing a distinct 
 
    git clone https://github.com/Jenber-Ligab/ACIS
    cd KAIM-W3
-   git checkout task-2
+   git checkout task-4
    ```
 
 2. **Install Dependencies**
-3. **Set up DVC (if working on task-1)**
+3. **Set up DVC (if working on task-2 & 3)**
 4. **Run Notebooks**
-
 
 
 ## Key Insights and Recommendations
@@ -147,4 +135,5 @@ This repository is divided into four key branches, each representing a distinct 
 
 This project provides actionable insights to optimize marketing strategies, improve customer segmentation, and enhance premium pricing models for AlphaCare Insurance Solutions. By leveraging data analytics, statistical testing, and machine learning, we aim to drive business growth and customer satisfaction.
 
+Thank you for using this repository! For any issues or contributions, please feel free to submit a pull request or contact the project maintainers.
 Thank you for using this repository! For any issues or contributions, please feel free to submit a pull request or contact the project maintainers.
