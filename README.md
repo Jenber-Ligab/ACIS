@@ -1,4 +1,4 @@
-# KAIM Week 3 Challenges Task 2
+# KAIM Week 3 Challenges Task 3
 
 ## AlphaCare Insurance Solutions (ACIS) Marketing Analytics Repository
 
@@ -16,17 +16,21 @@ This repository is divided into four key branches, each representing a distinct 
 
 ## Branch Overview
 
+### 3. `task-3` - A/B Hypothesis Testing
 
-### 2. `task-2` - Data Version Control (DVC)
+**Objective**: Conduct A/B hypothesis testing to validate key marketing hypotheses and understand risk distribution across various demographic and geographic groups.
 
-**Objective**: Implement version control for data management using DVC to ensure reproducibility and maintain tracking of data changes.
+**Null Hypotheses**:
+1. No risk differences across provinces.
+2. No risk differences between zip codes.
+3. No significant profit margin difference between zip codes.
+4. No significant risk difference between women and men.
 
 **Key Tasks**:
-- Install and configure DVC.
-- Configure local remote storage.
-- Add datasets to version control using DVC.
-- Commit changes to Git and push data to the local remote.
-
+- **Metrics Selection**: Choose KPIs to measure feature impact, such as total claims or premiums.
+- **Data Segmentation**: Split data into control and test groups.
+- **Statistical Testing**: Perform statistical tests (chi-squared, t-test, or z-test) and analyze the results.
+- **Results Analysis**: Evaluate p-values and report on hypothesis acceptance or rejection.
 ## Project Structure Overview
 
 ```bash
@@ -47,23 +51,7 @@ This repository is divided into four key branches, each representing a distinct 
   
 |   +---.vscode
 |   |       settings
-|   |       
-|   +---notebooks
-|   |       eda_notebook.ipynb
-|   |       __init__.py
-|   |       
-|   +---scripts
-|   |       data_processing.py
-|   |       data_visualization.py
-|   |       load_data.py
-|   |       __init__.py
-|   |       
-|   +---src
-|   |       __init__.py
-|   |       
-|   \---tests
-|           __init__.py
-|           
+        
 +---Data
 |   |   .gitignore
 |   |   raw.dvc
@@ -86,19 +74,16 @@ This repository is divided into four key branches, each representing a distinct 
 |           
 +---notebooks
 |       eda_notebook.ipynb
+|       hypothesis_testing_notebook.ipynb
 |       __init__.py
 |       
 +---scripts
 |   |   data_processing.py
 |   |   data_visualization.py
+|   |   hypothesis_testing.py
 |   |   load_data.py
 |   |   __init__.py
-|   |   
-|   \---__pycache__
-|           data_processing.cpython-312.pyc
-|           data_visualization.cpython-312.pyc
-|           load_data.cpython-312.pyc
-|           
+|   |            
 +---src
 |       __init__.py
 |       
@@ -116,7 +101,7 @@ This repository is divided into four key branches, each representing a distinct 
 ### Prerequisites
 
 - Python 3.8+
-- Libraries: `pandas`, `numpy`, `matplotlib`, `scikit-learn`, `xgboost`, `dvc`, `shap`, `lime`, `seaborn`, etc.
+- Libraries: `pandas`, `numpy`, `matplotlib`, `scikit-learn`, `xgboost`, `dvc`, `shap`, `lime`, `seaborn`,`scipy`, etc.
 - Jupyter Notebook for running the analysis.
 - DVC for data version control.
 
@@ -128,11 +113,11 @@ This repository is divided into four key branches, each representing a distinct 
 
    git clone https://github.com/Jenber-Ligab/ACIS
    cd KAIM-W3
-   git checkout task-2
+   git checkout task-3
    ```
 
 2. **Install Dependencies**
-3. **Set up DVC (if working on task-1)**
+3. **Set up DVC (if working on task-2)**
 4. **Run Notebooks**
 
 
