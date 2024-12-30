@@ -1,5 +1,4 @@
-# KAIM Week 3 Challenges Task 3
-
+# KAIM Week 3 Challenges Task 4
 ## AlphaCare Insurance Solutions (ACIS) Marketing Analytics Repository
 
 Welcome to the AlphaCare Insurance Solutions (ACIS) Marketing Analytics Repository! This repository contains the code, data, models, and analysis related to our project aimed at optimizing marketing strategies and identifying low-risk targets for potential premium reductions in the South African car insurance market.
@@ -16,21 +15,16 @@ This repository is divided into four key branches, each representing a distinct 
 
 ## Branch Overview
 
-### 3. `task-3` - A/B Hypothesis Testing
+### 4. `task-4` - Statistical Modeling & Machine Learning
 
-**Objective**: Conduct A/B hypothesis testing to validate key marketing hypotheses and understand risk distribution across various demographic and geographic groups.
-
-**Null Hypotheses**:
-1. No risk differences across provinces.
-2. No risk differences between zip codes.
-3. No significant profit margin difference between zip codes.
-4. No significant risk difference between women and men.
+**Objective**: Build predictive models to forecast total claims and optimize premium values using features such as car characteristics, owner details, and location.
 
 **Key Tasks**:
-- **Metrics Selection**: Choose KPIs to measure feature impact, such as total claims or premiums.
-- **Data Segmentation**: Split data into control and test groups.
-- **Statistical Testing**: Perform statistical tests (chi-squared, t-test, or z-test) and analyze the results.
-- **Results Analysis**: Evaluate p-values and report on hypothesis acceptance or rejection.
+- **Data Preparation**: Handle missing values, encode categorical variables, and split data into training and test sets.
+- **Modeling**: Implement models including Linear Regression, Random Forests, and Gradient Boosting Machines (GBMs).
+- **Evaluation**: Compare models using metrics such as accuracy, precision, recall, and F1-score.
+- **Feature Importance**: Analyze the most influential features using SHAP or LIME for interpretability.
+
 ## Project Structure Overview
 
 ```bash
@@ -44,14 +38,13 @@ This repository is divided into four key branches, each representing a distinct 
 |   README.md
 |   requirements
 |   requirements.txt
-|   
+|   Docker.txt
 +---.dvc
 |   |   .gitignore
 |   |   config
   
 |   +---.vscode
 |   |       settings
-        
 +---Data
 |   |   .gitignore
 |   |   raw.dvc
@@ -75,6 +68,8 @@ This repository is divided into four key branches, each representing a distinct 
 +---notebooks
 |       eda_notebook.ipynb
 |       hypothesis_testing_notebook.ipynb
+|       model_training.ipynb
+
 |       __init__.py
 |       
 +---scripts
@@ -82,13 +77,22 @@ This repository is divided into four key branches, each representing a distinct 
 |   |   data_visualization.py
 |   |   hypothesis_testing.py
 |   |   load_data.py
+|   |   eda.py
+|   |   evaluation.py
+|   |   feature_importance.py
+|   |   hypothesis_testing.py
+|   |   modeling.py
+|   |   save_model.py
 |   |   __init__.py
-|   |            
+
 +---src
 |       __init__.py
+|       main.py
 |       
 \---tests
         test_data_processing.py
+        test_hypothesis_testing.py
+        test_eda.py
         __init__.py
         
 
@@ -113,13 +117,18 @@ This repository is divided into four key branches, each representing a distinct 
 
    git clone https://github.com/Jenber-Ligab/ACIS
    cd KAIM-W3
-   git checkout task-3
+
+   git checkout task-4
+   ```
+
+2. **Install Dependencies**
+3. **Set up DVC (if working on task-2 & 3)**
+
    ```
 
 2. **Install Dependencies**
 3. **Set up DVC (if working on task-2)**
 4. **Run Notebooks**
-
 
 
 ## Key Insights and Recommendations
@@ -132,4 +141,5 @@ This repository is divided into four key branches, each representing a distinct 
 
 This project provides actionable insights to optimize marketing strategies, improve customer segmentation, and enhance premium pricing models for AlphaCare Insurance Solutions. By leveraging data analytics, statistical testing, and machine learning, we aim to drive business growth and customer satisfaction.
 
+Thank you for using this repository! For any issues or contributions, please feel free to submit a pull request or contact the project maintainers.
 Thank you for using this repository! For any issues or contributions, please feel free to submit a pull request or contact the project maintainers.
